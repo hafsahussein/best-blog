@@ -1,0 +1,52 @@
+.create {
+    width: 400px;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  .create label {
+    display: block;
+  }
+  .create h2 {
+    font-size: 20px;
+    color: #141c2c;
+    margin-bottom: 30px;
+  }
+  .create form{
+    display: block;
+    margin: 15px 0 30px;
+    padding: 0;
+  }
+  .create input:not([type="file"]),
+   .create textarea{
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  }
+  .create input[type='file']{
+   display: none;
+  }
+  label[for="file"]{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    background-color: #141c2c;
+    color: #f2f2f2;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+  }
+  .create textarea{
+      height: 200px;
+  }
+  .create button {
+      width: 100%;
+      padding: 10px 0;
+  }
+  

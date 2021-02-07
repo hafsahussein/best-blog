@@ -1,0 +1,10 @@
+.profile{
+    width: 300px;
+    margin: auto;
+}
+.profile button{
+    margin-top: 15px;
+}
+.profile button:last-of-type{
+ margin-left: 10px;   
+}
