@@ -84,9 +84,7 @@
   }
   }
 @media screen and (max-width:500px){
-  .links.small{
-     justify-content: space-between;
-  }
+
   .links.small a{
     margin: 0;
   }   

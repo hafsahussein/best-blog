@@ -1,6 +1,6 @@
 import {Link, useHistory} from 'react-router-dom';
 import google from '../../images/google.png'
-import github from '../../images/github.png'
+// import github from '../../images/github.png'
 import { useRef, useState } from "react";
 import { useAuth } from '../../hooks/useAuth';
 import firebase  from "firebase/app";
@@ -42,21 +42,21 @@ const Signin = () => {
         }
         setLoading(false)
     }
-    const signInWithGithub = async() =>{
-        const provider = new firebase.auth.GithubAuthProvider();
-        try{
-            setLoading(true)
-            setError(null)
-            await signInWithProvider(provider)
-            history.push('/')
+    // const signInWithGithub = async() =>{
+    //     const provider = new firebase.auth.GithubAuthProvider();
+    //     try{
+    //         setLoading(true)
+    //         setError(null)
+    //         await signInWithProvider(provider)
+    //         history.push('/')
 
-        }
-        catch(error){
-            setError(error.message)
-            setLoading(false)
-        }
-        setLoading(false)
-    }
+    //     }
+    //     catch(error){
+    //         setError(error.message)
+    //         setLoading(false)
+    //     }
+    //     setLoading(false)
+    // }
     return (  
         <form onSubmit = {signInWithEmail}>
         <button type = "button"
@@ -66,14 +66,14 @@ const Signin = () => {
             <img src={google} alt="Google"/>
             Sign in with Google
         </button>
-        <button type = "button"
+        {/* <button type = "button"
         className={styles.btn_ghost}
         onClick = {()=>signInWithGithub()}
 
         >
             <img src={github} alt="Google"/>
             Sign in with Github
-        </button>
+        </button> */}
         Or
         { error&& <p className="error"> <strong>Error:</strong> {error}</p> }
         <div className={styles.form_controll}>
